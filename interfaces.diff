@@ -1,0 +1,14 @@
+--- /etc/network/interfaces.orig	2017-08-18 13:35:05.744696880 +0000
++++ /etc/network/interfaces	2017-08-18 14:25:58.889932509 +0000
+@@ -12,8 +12,9 @@
+ iface eth0 inet manual
+ 
+ allow-hotplug wlan0
+-iface wlan0 inet manual
+-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
++iface wlan0 inet static
++    address 192.168.5.1
++    network 255.255.255.0
+ 
+ allow-hotplug wlan1
+ iface wlan1 inet manual
