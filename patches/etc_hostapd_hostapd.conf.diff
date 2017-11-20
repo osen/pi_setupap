@@ -1,0 +1,20 @@
+--- /etc/hostapd/hostapd.conf.orig	2017-11-20 13:29:53.721158110 +0000
++++ /etc/hostapd/hostapd.conf	2017-11-20 14:49:48.319999808 +0000
+@@ -22,7 +22,7 @@
+ # default: hostap). nl80211 is used with all Linux mac80211 drivers.
+ # Use driver=none if building hostapd as a standalone RADIUS server that does
+ # not control any wireless/wired driver.
+-# driver=hostap
++driver=nl80211
+ 
+ # Driver interface parameters (mainly for development testing use)
+ # driver_params=<params>
+@@ -83,7 +83,7 @@
+ ##### IEEE 802.11 related configuration #######################################
+ 
+ # SSID to be used in IEEE 802.11 management frames
+-ssid=test
++ssid=raspberrypi
+ # Alternative formats for configuring SSID
+ # (double quoted string, hexdump, printf-escaped string)
+ #ssid2="test"

@@ -1,0 +1,8 @@
+--- /etc/dhcpcd.conf.orig	2017-11-20 13:26:31.232593740 +0000
++++ /etc/dhcpcd.conf	2017-11-20 14:12:34.139999928 +0000
+@@ -55,3 +55,5 @@
+ #interface eth0
+ #fallback static_eth0
+ 
++interface wlan0
++static ip_address=192.168.5.1/24

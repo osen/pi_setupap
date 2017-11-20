@@ -1,8 +1,0 @@
---- /etc/default/isc-dhcp-server.orig	2017-08-18 13:33:53.384696907 +0000
-+++ /etc/default/isc-dhcp-server	2017-08-18 13:34:17.664696898 +0000
-@@ -18,4 +18,4 @@
- 
- # On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
- #	Separate multiple interfaces with spaces, e.g. "eth0 eth1".
--INTERFACES=""
-+INTERFACES="wlan0"
